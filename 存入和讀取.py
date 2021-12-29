@@ -18,7 +18,7 @@ def push():
             number.append(data)
         else:
             print('請重新輸入')
-    with open(fn,'w',newline=('')) as csvfile:
+    with open(fn,'',newline=('')) as csvfile:
         write = csv.writer(csvfile)
         for i in number:
             write.writerow([i])
